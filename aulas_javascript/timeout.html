@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Timeout</h1>
+        <h2>O método setTimeout()</h2>
+
+        <p>Espere 5 segundos para a mensagem:</p>
+        <p>1 segundo é igual a 1000 milisegundos!</p>
+
+        <h2 id="demo"></h2>
+
+        <script>
+            const myTimeout = setTimeout(mensagem,5000);
+
+            function mensagem()
+            {
+                document.getElementByID("demo").innerHTML = "Olá aluno!"
+            }
+        </script>
+    </body>
+</html>

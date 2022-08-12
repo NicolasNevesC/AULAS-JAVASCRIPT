@@ -1,0 +1,16 @@
+<body>
+    <h2>Store and retrieve data from local storage.</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Storing data:
+        const myOBJ = { name: "John", age: 31,city: "New York"};
+        const myJSON = JSON.stringify(myOBJ);
+        localStorage.setITEM("testJSON" , myJSON);
+
+        // Retrieving data:
+        let text = localStorage.getItem("testJSON");
+        let obj = JSON.parse(text);
+        document.getElejehtById("demo").innerHTML = obj.name;
+    </script>
+</body>

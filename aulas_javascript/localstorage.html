@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Localstorage</title>
+</head>
+<body>
+    <span class="btnSetItem">Gravar Item</span>
+    <span class="btnGetItem">Pegar Item</span>
+    <script>
+        var btnSetItem = document.querySelector('.btnSetItem')
+        var btnGetItem = document.querySelector('.btnGetItem')
+
+        function setLocalStorage(){
+            btnSetItem.addEventListener('click',() => {
+                localStorage.setItem('nome','Jack Sparrow')
+            })
+        }
+
+        function getLocalStorage(){
+            btnGetItem.addEventListener('click',() => {
+                console.log(localStorage.getItem('nome'))
+            })
+        }
+        setLocalStorage();
+        getLocalStorage();
+    </script>
+</body>
+</html>
